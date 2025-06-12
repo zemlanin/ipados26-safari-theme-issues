@@ -1,4 +1,4 @@
-This repo demonstates issues with `<meta name="theme-color">` in Safari on iPadOS 26\* Developer Beta 1, namely:
+This repo demonstates issues with `<meta name="theme-color">` in Safari on iPadOS 26\* Developer Beta 1 (FB17986290), namely:
 
 - `<meta name="theme-color">` does not affect Safari top bar
 - `<meta name="theme-color">` does not affect the viewport "background" color when overscrolling
