@@ -3,7 +3,7 @@ This repo demonstates issues with `<meta name="theme-color">` in Safari on iPadO
 - `<meta name="theme-color">` does not affect Safari top bar
 - `<meta name="theme-color">` does not affect the viewport "background" color when overscrolling
 
-\* — macOS 26 Tahoe seems to also have these issues, but I don't have a device to confirm that for myself
+\* — macOS Tahoe 26 seems to also have these issues, but I don't have a device to confirm that for myself
 
 ---
 
