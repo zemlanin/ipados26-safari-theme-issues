@@ -1,7 +1,8 @@
-handleScroll();
-window.addEventListener("scroll", handleScroll);
+update();
+window.addEventListener("scroll", update);
+document.querySelector("#change-to-green").addEventListener("change", update);
 
-function handleScroll() {
+function update() {
   const scrolled = window.scrollY > 10;
 
   if (scrolled) {
@@ -10,11 +11,15 @@ function handleScroll() {
     document.body.classList.remove("scrolled");
   }
 
+  const changeToGreen = document.querySelector("#change-to-green").checked;
+
   const themeColor = !scrolled
     ? "black"
-    : matchMedia("(prefers-color-scheme: dark)").matches
-      ? "#13171f"
-      : "#fff";
+    : changeToGreen
+      ? "#00a500"
+      : matchMedia("(prefers-color-scheme: dark)").matches
+        ? "#13171f"
+        : "#fff";
 
   document.querySelector('meta[name="theme-color"]').content = themeColor;
 }
