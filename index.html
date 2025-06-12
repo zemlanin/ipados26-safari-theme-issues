@@ -21,9 +21,11 @@
 
     <main>
       <article>
-        This page demonstates issues with
-        <code>&lt;meta name="theme-color"&gt;</code> in Safari on iPadOS 26
-        Developer Beta 1, namely:
+        <p>
+          This page demonstates issues with
+          <code>&lt;meta name="theme-color"&gt;</code> in Safari on iPadOS* 26
+          Developer Beta 1, namely:
+        </p>
         <ul>
           <li>
             <code>&lt;meta name="theme-color"&gt;</code> does not affect Safari
@@ -35,12 +37,14 @@
           </li>
         </ul>
 
-        When scrolling the page, page navbar's background and theme colors
-        change:
+        <p>
+          When scrolling the page, page navbar's background and theme colors
+          change:
+        </p>
         <ul>
           <li>
-            At the top of the page, navbar has a slight dark gradient and the
-            theme color is <code>black</code> to put focus on the hero image
+            Before scrolling, navbar has a slight dark gradient and the theme
+            color is <code>black</code> to put focus on the hero image
           </li>
           <li>
             After scrolling, navbar and theme are page's background color to
@@ -48,10 +52,19 @@
           </li>
         </ul>
 
-        Safari on iPadOS 26 seems to match the color of the top pixel on the
-        page, so to highlight that
-        <code>&lt;meta name="theme-color"&gt;</code> isn't used, enable the
-        control below
+        <p>
+          Safari on iPadOS 26 seems to match the color of the top pixel on the
+          page, so to highlight that
+          <code>&lt;meta name="theme-color"&gt;</code> isn't used, enable the
+          control below
+        </p>
+
+        <aside>
+          <small>
+            * — macOS 26 Tahoe seems to also have these issues, but I don't have
+            a device to confirm that for myself</small
+          >
+        </aside>
 
         <footer>
           <a href="https://github.com/zemlanin/ipados26-safari-theme-issues"
